@@ -1,0 +1,25 @@
+.shimmer-container {
+  width: 100%;
+  max-width: 300px; /* Set a width or maximum width */
+}
+
+/* Shimmer effect styles */
+.shimmer-line {
+  height: 50px; /* Define the height of the shimmer lines */
+  margin-bottom: 10px; /* Spacing between shimmer lines */
+  background: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 50%,
+    #f6f7f8 100%
+  ); /* Gradient for shimmer effect */
+  background-size: 200% auto; /* Background size for animation */
+  animation: shimmer 1.5s infinite linear; /* Animation settings */
+}
+
+/* Animation keyframes */
+@keyframes shimmer {
+  to {
+    background-position: 200% center; /* Move the gradient to create the shimmer effect */
+  }
+}
